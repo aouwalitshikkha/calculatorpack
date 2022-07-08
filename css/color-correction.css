@@ -7,26 +7,35 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    color: #0F1111;
 }
 
 /* Main Colors */
 :root {
-    --color-white: #ffffff;
-    --color-light-dark: #9bb8ff;
-    --color-light-light: #fafefe;
-    --color-dark-light: #0000b3;
-    --color-dark-dark: #122451;
-    /* --color-dark-dark: #0000b3; */
-    --font-18px-size: 18px;
+
+    --amazon-nav: #131921;
+    --amazon-secondary: #F7F8F8;
+    --amazon-buy-color: #FFA41C;
+    --amazon-cart-color: #FFD814;
+
+    /* for font size */
+    --h1-size: 2em;
+    --h2-size: 18px;
+    --p-size: 16px;
+
+    /* link Color */
+    --link-color: #565959;
+
 }
 
 
 /* Menubar CSS Codes  */
 .menubar {
-    background: var(--color-dark-dark);
-    /* background: linear-gradient(83deg, rgba(19, 20, 46, 1) 0%, rgba(27, 32, 140, 1) 100%); */
+    background: var(--amazon-nav);
     color: var(--color-white);
-    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .menubar ul li {
@@ -37,39 +46,47 @@ body {
     color: var(--color-white);
 }
 
+.menubar ul li a {
+    padding: 10px;
+    border: none;
+}
+
+.menubar ul li a:hover {
+    text-decoration: dashed;
+    text-decoration-color: var(--color-white);
+}
+
 /* here section */
 
 .hero {
-    background-color: var(--color-light-light);
+    background-color: var(--amazon-secondary);
 }
 
 .left-text h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
-    color: #1E155F;
+    color: var(--amazon-buy-color);
 }
 
 .left-text h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-dark-light);
+    color: #000;
     text-transform: uppercase;
-    background-color: var(--color-white);
+    background-color: var(--amazon-cart-color);
     padding: 5px 0;
-    font-size: 20px;
+    font-size: var(--h2-size)
 }
 
 .left-text p {
     text-align: left;
-    font-size: 18px;
+    font-size: var(--p-size);
     line-height: 150%;
 }
 
 /* Calculator Starts */
 
 .calc-card {
-    background-color: var(--color-light-light);
-    border: var(--color-dark-dark) solid 3px;
+    background-color: var(--amazon-secondary);
+    border: var(--amazon-nav) solid 3px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -78,11 +95,11 @@ body {
 .calc-display input[type="text"] {
     width: 100%;
     text-align: right;
-    font-weight: bolder;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: var(--font-18px-size);
-
+    font-size: var(--p-size);
+    letter-spacing: 2px;
+    font-size: var(--p-size);
 }
 
 .btn-row {
@@ -92,50 +109,47 @@ body {
 
 .btn-row button {
     font-weight: bolder;
-    color: var(--color-dark-dark);
+
 }
 
 
 .btn-row .btn:hover {
-    background-color: var(--color-dark-light) !important;
+    background-color: var(--amazon-cart-color) !important;
     color: var(--color-white)
 }
 
 .btn-row .btn-ac {
-    background-color: var(--color-dark-light);
+    background-color: var(--amazon-cart-color);
     color: var(--color-white)
 }
 
 .btn-row .btn-ac:hover {
-    background-color: var(--color-dark-dark);
+    background-color: var(--amazon-buy-color);
 }
 
 /* Card of Why WE  */
 .freeuse,
 .easyuse {
-    background-color: var(--color-light-light);
+    background-color: var(--amazon-secondary);
     color: var(--color-dark-dark)
 }
 
 .feature-container h2 {
     font-weight: 700;
-    color: var(--color-dark-light);
 }
 
 .feature-container h2 {
-    color: var(--color-dark-dark);
+    color: var(--amazon-buy-color);
 }
 
 .feature-container h2 span {
-    color: var(--color-light-dark);
+    color: var(--amazon-cart-color);
 }
 
 /* Category Portion */
 .category-icon i {
-    background-color: var(--color-dark-dark);
-    border: 1px var(--color-dark-dark) solid;
-    border-radius: 50%;
     padding: 20px;
+    display: block;
     color: var(--color-white);
 }
 
@@ -150,24 +164,24 @@ body {
 }
 
 .card-calculator-list li i {
-    color: var(--color-dark-dark);
+    color: var(--color-white);
 }
 
 
 .card-calculator-list li a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     padding: 3px;
-    color: var(--color-dark-dark);
+    color: var(--link-color);
     transition: border-bottom 0.5s;
 }
 
 .card-calculator-list li a:hover {
-    border-bottom: 2px solid var(--color-dark-light);
+    border-bottom: var(--link-color);
 }
 
 .category-card:nth-child(odd) .card {
-    background-color: var(--color-light-light);
+    background-color: var(--amazon-secondary);
 }
 
 .category-card .card {
