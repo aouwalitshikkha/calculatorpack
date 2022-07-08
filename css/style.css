@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .menubar {
@@ -122,3 +123,25 @@ body {
 
 .card-calculator-list {
     list-style: none;
+    width: 100%;
+}
+
+
+.card-calculator-list li {
+    padding: 3px 1px;
+}
+
+
+
+.card-calculator-list li a {
+    text-decoration: none;
+    color: rgba(19, 20, 46, 1);
+    padding: 3px;
+    transition: border-bottom 0.5s;
+
+
+}
+
+.card-calculator-list li a:hover {
+    border-bottom: 2px solid #191D73;
+}
