@@ -111,3 +111,14 @@ body {
 .freeuse {
     background-color: #819BF8;
 }
+
+.category-icon i {
+    background-color: #191D73;
+    border: 1px #191D73 solid;
+    border-radius: 50%;
+    padding: 20px;
+    color: #fff;
+}
+
+.card-calculator-list {
+    list-style: none;
