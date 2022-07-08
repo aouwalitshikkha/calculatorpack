@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -114,13 +115,9 @@ body {
 
 /* Card CSS */
 
-.easyuse,
-.reliableuse {
+.freeuse,
+.easyuse {
     background-color: #CFE1FF;
-}
-
-.freeuse {
-    background-color: #819BF8;
 }
 
 .category-icon i {
