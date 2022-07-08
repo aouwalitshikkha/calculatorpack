@@ -82,6 +82,16 @@ body {
     color: #1E155F;
 }
 
+.btn-ac {
+    background-color: #1E155F;
+    color: white !important;
+
+}
+
+.btn-ac:hover {
+    background-color: red;
+}
+
 /* blockquote Container */
 
 .feature {
@@ -131,6 +141,9 @@ body {
     padding: 3px 1px;
 }
 
+.card-calculator-list li i {
+    color: #191D73;
+}
 
 
 .card-calculator-list li a {
