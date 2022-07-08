@@ -148,14 +148,34 @@ body {
 
 .card-calculator-list li a {
     text-decoration: none;
-    color: #191D73;
-    font-weight: 700;
+    font-weight: 500;
     padding: 3px;
+    color: black;
     transition: border-bottom 0.5s;
-
-
 }
 
 .card-calculator-list li a:hover {
     border-bottom: 2px solid #191D73;
+}
+
+.category-card:nth-child(odd) .card {
+    background-color: #CFE1FF;
+}
+
+.category-card .card {
+    transition: box-shadow, 1s;
+    margin-bottom: 20px;
+}
+
+.category-card .card:hover {
+    box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.54);
+}
+
+.category-card .card-body .card-title {
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px #191D73 solid;
+    padding-bottom: 2px;
 }
