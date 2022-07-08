@@ -135,7 +135,8 @@ body {
 
 .card-calculator-list li a {
     text-decoration: none;
-    color: rgba(19, 20, 46, 1);
+    color: #191D73;
+    font-weight: 700;
     padding: 3px;
     transition: border-bottom 0.5s;
 
