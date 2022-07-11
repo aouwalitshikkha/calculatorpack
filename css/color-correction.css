@@ -25,14 +25,13 @@ body {
 
     /* link Color */
     --link-color: #565959;
-
 }
 
 
 /* Menubar CSS Codes  */
 .menubar {
-    background: var(--amazon-nav);
-    color: var(--color-white);
+    background: #283593;
+    color: white;
     font-size: 16px;
     cursor: pointer;
     padding: 5px;
@@ -43,7 +42,7 @@ body {
 }
 
 .navbar-icon {
-    color: var(--color-white);
+    color: white;
 }
 
 .menubar ul li a {
@@ -51,27 +50,24 @@ body {
     border: none;
 }
 
-.menubar ul li a:hover {
-    text-decoration: dashed;
-    text-decoration-color: var(--color-white);
-}
+
 
 /* here section */
 
 .hero {
-    background-color: var(--amazon-secondary);
+    background-color: #E1E2E1;
 }
 
 .left-text h1 {
     text-transform: uppercase;
     font-weight: bolder;
-    color: var(--amazon-buy-color);
+    color: #3f51b5;
 }
 
 .left-text h2 {
-    color: #000;
+    color: white;
     text-transform: uppercase;
-    background-color: var(--amazon-cart-color);
+    background-color: #3f51b5;
     padding: 5px 0;
     font-size: var(--h2-size)
 }
@@ -85,8 +81,8 @@ body {
 /* Calculator Starts */
 
 .calc-card {
-    background-color: var(--amazon-secondary);
-    border: var(--amazon-nav) solid 3px;
+    background-color: #E1E2E1;
+    border: #3f51b5 solid 3px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -109,28 +105,27 @@ body {
 
 .btn-row button {
     font-weight: bolder;
-
 }
 
 
 .btn-row .btn:hover {
-    background-color: var(--amazon-cart-color) !important;
-    color: var(--color-white)
+    background-color: #001064;
+    color: white !important;
 }
 
 .btn-row .btn-ac {
-    background-color: var(--amazon-cart-color);
-    color: var(--color-white)
+    background-color: #5f5fc4;
+    color: white;
 }
 
 .btn-row .btn-ac:hover {
-    background-color: var(--amazon-buy-color);
+    background-color: #001064;
 }
 
 /* Card of Why WE  */
 .freeuse,
 .easyuse {
-    background-color: var(--amazon-secondary);
+    background-color: #E1E2E1;
     color: var(--color-dark-dark)
 }
 
@@ -138,19 +133,16 @@ body {
     font-weight: 700;
 }
 
-.feature-container h2 {
-    color: var(--amazon-buy-color);
-}
 
 .feature-container h2 span {
-    color: var(--amazon-cart-color);
+    color: #3f51b5;
 }
 
 /* Category Portion */
 .category-icon i {
     padding: 20px;
     display: block;
-    color: var(--color-white);
+    color: #3f51b5;
 }
 
 .card-calculator-list {
@@ -164,7 +156,7 @@ body {
 }
 
 .card-calculator-list li i {
-    color: var(--color-white);
+    color: #3f51b5;
 }
 
 
@@ -172,12 +164,11 @@ body {
     text-decoration: none;
     font-weight: 400;
     padding: 3px;
-    color: var(--link-color);
-    transition: border-bottom 0.5s;
+    color: #0a0a0a;
 }
 
 .card-calculator-list li a:hover {
-    border-bottom: var(--link-color);
+    border-bottom: #001064 1px solid;
 }
 
 .category-card:nth-child(odd) .card {
@@ -203,12 +194,12 @@ body {
 
 /*footer*/
 .col_white_amrc {
-    color: var(--color-white);
+    color: white;
 }
 
 footer {
     width: 100%;
-    background-color: var(--color-dark-dark);
+    background-color: #283593;
     min-height: 250px;
     padding: 10px 0px 25px 0px;
     margin-top: 5%;
@@ -221,7 +212,7 @@ footer {
 
 footer p {
     font-size: 13px;
-    color: var(--color-white);
+    color: white;
     padding-bottom: 0px;
     margin-bottom: 8px;
 }
@@ -242,11 +233,11 @@ footer p {
 }
 
 .footer_ul_amrc li a {
-    color: var(--color-white);
+    color: white;
 }
 
 .footer_ul_amrc li a:hover {
-    color: var(--color-white);
+    color: white;
     text-decoration: none;
 }
 
@@ -266,6 +257,7 @@ footer p {
 
 .footer_ul2_amrc li p {
     display: table;
+    color: white;
 }
 
 .footer_ul2_amrc li a:hover {
@@ -277,7 +269,7 @@ footer p {
 }
 
 .bottom_border {
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid white;
     padding-bottom: 20px;
 }
 
@@ -296,8 +288,8 @@ footer p {
 }
 
 .social_footer_ul li a {
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
+    color: white;
+    border: 1px solid white;
     padding: 8px;
     border-radius: 50%;
 }
@@ -311,38 +303,77 @@ footer p {
 
 /* Single HTML */
 .article-container {
-    margin: 5% auto;
-}
-
-.article-container p {
-    font-size: 16px;
-    line-height: 1.5rem;
+    margin: 0 auto 5% auto;
 }
 
 .article-container h1 {
     font-size: 32px;
     padding: 5px 2px;
+    font-weight: 800;
+}
+
+.article-container h2 {
+    font-size: 28px;
+    padding: 5px 2px;
+    font-weight: 700;
+}
+
+.breadcrumb-item a {
+    color: #000;
+
+}
+
+.article-container .faq-answer::before {
+    content: "Answers: ";
+    font-weight: bolder;
+}
+
+
+
+.article-container p {
+    font-size: 18px;
+    line-height: 1.8rem;
 }
 
 .article-container img {
     width: 90%;
     height: auto;
+    margin-bottom: 10px;
     padding: 15px;
-    border: #0000b3 solid 2px;
     border-radius: 8px;
 }
 
+
+
 .form-entry {
-    background-color: var(--color-light-light);
+    background-color: #E1E2E1;
+
 }
 
 .form-entry row {
     margin: 0 auto;
+}
+
+.form-entry .btn-form {
+    background-color: #283593;
+    width: 80%;
+    color: white;
 
 }
 
+.calculation-form {
+    border-right: #283593 solid 1px;
+    padding: 2px;
+}
+
+.related {
+    background-color: #E1E2E1;
+    color: #001064;
+}
+
 .related h2 {
-    display: inline;
+    display: flex;
+    color: #001064;
 }
 
 .related ul {
@@ -360,8 +391,12 @@ footer p {
 .related ul li a {
     border-bottom: var(--color-dark-light) double 2px;
     padding-bottom: 3px;
-    color: var(--color-dark-darks);
+    color: #001064;
+}
+
+.related ul li a:hover {
     text-decoration: none;
+
 }
 
 .related-first {
