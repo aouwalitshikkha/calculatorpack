@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator Pack Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/color-correction.css">
+    </head>
+
+    <body class="d-flex flex-column min-vh-100">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg menubar ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="images/calculator-pack-logo.png" width="250" height="31"
+                            alt="Calculator Pack Website Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggle navbar-icon"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 admin-menu ">
+
+
+                            <li class="nav-item dropdown admin-items">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Author</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add New</a></li>
+                                    <li><a class="dropdown-item" href="#">All Author</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown admin-items">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Calculator Details</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add new</a></li>
+                                    <li><a class="dropdown-item" href="#">All Details</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown admin-items">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Calculator Forms</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add New</a></li>
+                                    <li><a class="dropdown-item" href="#">All Forms</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown admin-items">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Category </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add new</a></li>
+                                    <li><a class="dropdown-item" href="#">All Categories</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item admin-items-logout">
+                                <a class="nav-link" href="#" aria-disabled="true">Log Out</a>
+                            </li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container my-5 admin-section">
+            <div class="text-center">
+                <h1>All Calculator Details</h1>
+            </div>
+
+            <table id="example" class="table table-striped  admin-table ">
+                <thead class="table-light">
+                    <tr>
+                        <td scope="col">#</td>
+                        <td scope="col">Calculator Name</td>
+                        <td scope="col">Title</td>
+                        <td scope="col">#</td>
+                        <td scope="col">#</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Absolute Value Calculator</td>
+                        <td>Absolute Value Calculation</td>
+                        <td> <a class="btn btn-block btn-primary" href="">Edit</a></td>
+                        <td> <a class="btn btn-block btn-danger">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Absolute Value Calculator</td>
+                        <td>Absolute Value Calculation</td>
+                        <td> <a class="btn btn-block btn-primary" href="">Edit</a></td>
+                        <td> <a class="btn btn-block btn-danger">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Absolute Value Calculator</td>
+                        <td>Absolute Value Calculation</td>
+                        <td> <a class="btn btn-block btn-primary" href="">Edit</a></td>
+                        <td> <a class="btn btn-block btn-danger">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+
+        <footer class="footer mt-auto">
+            <div class="container bottom_border">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                        <!--headin5_amrc-->
+                        <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+                        <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+                        <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+
+
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <!--headin5_amrc-->
+                        <ul class="footer_ul_amrc">
+                            <li><a href="#">Image Rectoucing</a></li>
+                            <li><a href="#">Clipping Path</a></li>
+                            <li><a href="#">Hollow Man Montage</a></li>
+                            <li><a href="#">Ebay & Amazon</a></li>
+                            <li><a href="#">Hair Masking/Clipping</a></li>
+                            <li><a href="#">Image Cropping</a></li>
+                        </ul>
+                        <!--footer_ul_amrc ends here-->
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <!--headin5_amrc-->
+                        <ul class="footer_ul_amrc">
+                            <li><a href="#">Remove Background</a></li>
+                            <li><a href="#">Shadows & Mirror Reflection</a></li>
+                            <li><a href="#">Logo Design</a></li>
+                            <li><a href="#">Vectorization</a></li>
+                            <li><a href="#">Hair Masking/Clipping</a></li>
+                            <li><a href="#">Image Cropping</a></li>
+                        </ul>
+                        <!--footer_ul_amrc ends here-->
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="container">
+
+                <!--foote_bottom_ul_amrc ends here-->
+                <p class="text-center mt-3">Copyright @2022 | Designed With by <strong>CalculatorPack.com</strong></p>
+
+                <ul class="social_footer_ul">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <!--social_footer_ul ends here-->
+            </div>
+
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+        <script src="js/admin.js"></script>
+
+    </body>
+
+</html>

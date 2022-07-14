@@ -402,3 +402,67 @@ footer p {
 .related-first {
     font-weight: 700;
 }
+
+/* Admin Menu */
+
+
+.admin-items,
+.admin-items a,
+.admin-items:hover,
+.admin-items:active {
+    color: white !important;
+}
+
+.admin-items ul {
+    background-color: #283593;
+}
+
+.admin-items ul li a:hover {
+    background-color: #4e62fd;
+}
+
+.admin-items-logout a {
+    color: #283593;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+
+}
+
+.admin-items-logout a:hover {
+    background-color: #6375ff;
+    color: white;
+}
+
+/* All Author Page */
+.admin-section h1 {
+    font-size: 32px;
+    font-weight: 800px;
+    margin-bottom: 30px;
+}
+
+.admin-table img {
+    width: 90px;
+}
+
+.dataTables_filter {
+    margin-bottom: 13px !important;
+}
+
+#example_paginate a,
+{
+background-color: #001064;
+margin-top: 2px !important;
+color: white !important;
+}
+
+#example_info {
+    color: #001064;
+}
+
+/* Add Author Section */
+
+.admin-btn {
+    background-color: #283593;
+    color: white;
+}
