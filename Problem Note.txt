@@ -1,2 +1,6 @@
 1. Single html File is not responsive in form section 
 2. Color Correction must be done in Single HTML form section 
+3. 404 Template
+4. 500 Template
+5. Share Link Url 
+6. Social Share 
