@@ -7,26 +7,29 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    color: #0F1111;
+
 }
 
 /* Main Colors */
 :root {
-    --color-white: #ffffff;
-    --color-light-dark: #9bb8ff;
-    --color-light-light: #fafefe;
-    --color-dark-light: #0000b3;
-    --color-dark-dark: #122451;
-    /* --color-dark-dark: #0000b3; */
-    --font-18px-size: 18px;
+    --primary-color: #283593;
+    --secondary-color: #3f51b5;
+    --white-color: #fff;
+    --bg-color: #f6fbff;
+    --black-color: #000;
+
 }
+
 
 
 /* Menubar CSS Codes  */
 .menubar {
-    background: var(--color-dark-dark);
-    /* background: linear-gradient(83deg, rgba(19, 20, 46, 1) 0%, rgba(27, 32, 140, 1) 100%); */
-    color: var(--color-white);
-    font-weight: bolder;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .menubar ul li {
@@ -34,29 +37,34 @@ body {
 }
 
 .navbar-icon {
-    color: var(--color-white);
+    color: var(--white-color);
 }
+
+.menubar ul li a {
+    padding: 10px;
+    border: none;
+}
+
+
 
 /* here section */
 
 .hero {
-    background-color: var(--color-light-light);
+    background-color: var(--bg-color);
 }
 
 .left-text h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
-    color: #1E155F;
+    color: var(--primary-color);
 }
 
 .left-text h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-dark-light);
+    color: var(--white-color);
     text-transform: uppercase;
-    background-color: var(--color-white);
+    background-color: var(--primary-color);
     padding: 5px 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .left-text p {
@@ -68,8 +76,8 @@ body {
 /* Calculator Starts */
 
 .calc-card {
-    background-color: var(--color-light-light);
-    border: var(--color-dark-dark) solid 3px;
+    background-color: var(--bg-color);
+    border: var(--primary-color) solid 3px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -78,11 +86,10 @@ body {
 .calc-display input[type="text"] {
     width: 100%;
     text-align: right;
-    font-weight: bolder;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: var(--font-18px-size);
-
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 .btn-row {
@@ -92,51 +99,45 @@ body {
 
 .btn-row button {
     font-weight: bolder;
-    color: var(--color-dark-dark);
+    color: var(--black-color)
 }
 
 
 .btn-row .btn:hover {
-    background-color: var(--color-dark-light) !important;
-    color: var(--color-white)
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
 }
 
 .btn-row .btn-ac {
-    background-color: var(--color-dark-light);
-    color: var(--color-white)
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .btn-row .btn-ac:hover {
-    background-color: var(--color-dark-dark);
+    background-color: var(--primary-color);
 }
 
 /* Card of Why WE  */
 .freeuse,
 .easyuse {
-    background-color: var(--color-light-light);
+    background-color: var(--bg-color);
     color: var(--color-dark-dark)
 }
 
 .feature-container h2 {
     font-weight: 700;
-    color: var(--color-dark-light);
 }
 
-.feature-container h2 {
-    color: var(--color-dark-dark);
-}
 
 .feature-container h2 span {
-    color: var(--color-light-dark);
+    color: var(--primary-color);
 }
 
 /* Category Portion */
 .category-icon i {
-    background-color: var(--color-dark-dark);
-    border: 1px var(--color-dark-dark) solid;
-    border-radius: 50%;
     padding: 20px;
-    color: var(--color-white);
+    display: block;
+    color: var(--primary-color);
 }
 
 .card-calculator-list {
@@ -150,24 +151,24 @@ body {
 }
 
 .card-calculator-list li i {
-    color: var(--color-dark-dark);
+    color: var(--primary-color);
 }
 
 
 .card-calculator-list li a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     padding: 3px;
-    color: var(--color-dark-dark);
-    transition: border-bottom 0.5s;
+    color: var(--black-color);
 }
 
 .card-calculator-list li a:hover {
-    border-bottom: 2px solid var(--color-dark-light);
+    border-bottom: var(--secondary-color) 1px solid;
 }
 
 .category-card:nth-child(odd) .card {
-    background-color: var(--color-light-light);
+    background-color: var(--bg-color);
+
 }
 
 .category-card .card {
@@ -182,19 +183,19 @@ body {
 }
 
 .category-card .card-body .card-title {
-    color: var(--color-dark-dark);
+    color: var(--primary-color);
     font-weight: 700;
     padding-bottom: 2px;
 }
 
 /*footer*/
 .col_white_amrc {
-    color: var(--color-white);
+    color: var(--white-color);
 }
 
 footer {
     width: 100%;
-    background-color: var(--color-dark-dark);
+    background-color: var(--primary-color);
     min-height: 250px;
     padding: 10px 0px 25px 0px;
     margin-top: 5%;
@@ -207,7 +208,7 @@ footer {
 
 footer p {
     font-size: 13px;
-    color: var(--color-white);
+    color: var(--white-color);
     padding-bottom: 0px;
     margin-bottom: 8px;
 }
@@ -228,11 +229,11 @@ footer p {
 }
 
 .footer_ul_amrc li a {
-    color: var(--color-white);
+    color: var(--white-color);
 }
 
 .footer_ul_amrc li a:hover {
-    color: var(--color-white);
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -252,6 +253,7 @@ footer p {
 
 .footer_ul2_amrc li p {
     display: table;
+    color: var(--white-color);
 }
 
 .footer_ul2_amrc li a:hover {
@@ -263,7 +265,7 @@ footer p {
 }
 
 .bottom_border {
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--white-color);
     padding-bottom: 20px;
 }
 
@@ -282,8 +284,8 @@ footer p {
 }
 
 .social_footer_ul li a {
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
     padding: 8px;
     border-radius: 50%;
 }
@@ -297,38 +299,78 @@ footer p {
 
 /* Single HTML */
 .article-container {
-    margin: 5% auto;
-}
-
-.article-container p {
-    font-size: 16px;
-    line-height: 1.5rem;
+    margin: 0 auto 5% auto;
 }
 
 .article-container h1 {
     font-size: 32px;
     padding: 5px 2px;
+    font-weight: 800;
+}
+
+.article-container h2 {
+    font-size: 28px;
+    padding: 5px 2px;
+    font-weight: 700;
+}
+
+.breadcrumb-item a {
+    color: var(--black-color);
+}
+
+
+.article-container .faq-answer::before {
+    content: "Answers: ";
+    font-weight: bolder;
+}
+
+
+.article-container p {
+    font-size: 18px;
+    line-height: 1.8rem;
 }
 
 .article-container img {
     width: 90%;
     height: auto;
+    margin: 10px auto;
     padding: 15px;
-    border: #0000b3 solid 2px;
     border-radius: 8px;
 }
 
+
+
 .form-entry {
-    background-color: var(--color-light-light);
+    background-color: var(--bg-color);
+
 }
 
 .form-entry row {
     margin: 0 auto;
+}
+
+.form-entry .btn-form {
+    background-color: #283593;
+    background-color: var(--primary-color);
+    width: 80%;
+    color: var(--white-color);
 
 }
 
+.calculation-form {
+    border-right: var(--primary-color) solid 1px;
+    padding: 2px;
+}
+
+.related {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
 .related h2 {
-    display: inline;
+    display: flex;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .related ul {
@@ -344,12 +386,90 @@ footer p {
 }
 
 .related ul li a {
-    border-bottom: var(--color-dark-light) double 2px;
-    padding-bottom: 3px;
-    color: var(--color-dark-darks);
+    border-bottom: var(--primary-color) double 2px;
     text-decoration: none;
+    padding-bottom: 3px;
+    color: var(--primary-color);
+}
+
+.related ul li a:hover {
+    border-bottom: none;
 }
 
 .related-first {
+    font-weight: 800;
+}
+
+/* Admin Menu */
+
+
+.admin-items,
+.admin-items a,
+.admin-items:hover,
+.admin-items:active {
+    color: var(--white-color) !important;
+}
+
+.admin-items ul {
+    background-color: var(--primary-color);
+}
+
+.admin-items ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+.admin-items-logout a {
+    color: var(--primary-color);
     font-weight: 700;
+    background-color: var(--white-color);
+    border: var(--white-color) 1px solid;
+    border-radius: 5px;
+
+}
+
+.admin-items-logout a:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+/* All Author Page */
+.admin-section h1 {
+    font-size: 32px;
+    font-weight: 800px;
+    margin-bottom: 30px;
+}
+
+.admin-table img {
+    width: 90px;
+}
+
+.dataTables_filter {
+    margin-bottom: 13px !important;
+}
+
+#example_paginate a {
+    background-color: var(--primary-color);
+    margin-top: 2px !important;
+    color: var(--white-color) !important;
+}
+
+#example_info {
+    color: var(--primary-color);
+}
+
+/* Add Author Section */
+
+.admin-btn {
+    background-color: var(--secondary-color) !important;
+    color: var(--white-color);
+}
+
+.btn-home-category {
+    background-color: var(--secondary-color);
+    color: var(--white-color)
+}
+
+.btn-home-category:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color)
 }

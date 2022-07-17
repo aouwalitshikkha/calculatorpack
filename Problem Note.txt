@@ -1,0 +1,2 @@
+1. Single html File is not responsive in form section 
+2. Color Correction must be done in Single HTML form section 
