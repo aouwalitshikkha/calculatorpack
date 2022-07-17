@@ -8,30 +8,25 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #0F1111;
+
 }
 
 /* Main Colors */
 :root {
+    --primary-color: #283593;
+    --secondary-color: #3f51b5;
+    --white-color: #fff;
+    --bg-color: #E1E2E1;
+    --black-color: #000;
 
-    --amazon-nav: #131921;
-    --amazon-secondary: #F7F8F8;
-    --amazon-buy-color: #FFA41C;
-    --amazon-cart-color: #FFD814;
-
-    /* for font size */
-    --h1-size: 2em;
-    --h2-size: 18px;
-    --p-size: 16px;
-
-    /* link Color */
-    --link-color: #565959;
 }
+
 
 
 /* Menubar CSS Codes  */
 .menubar {
-    background: #283593;
-    color: white;
+    background: var(--primary-color);
+    color: var(--white-color);
     font-size: 16px;
     cursor: pointer;
     padding: 5px;
@@ -42,7 +37,7 @@ body {
 }
 
 .navbar-icon {
-    color: white;
+    color: var(--white-color);
 }
 
 .menubar ul li a {
@@ -55,34 +50,34 @@ body {
 /* here section */
 
 .hero {
-    background-color: #E1E2E1;
+    background-color: var(--bg-color);
 }
 
 .left-text h1 {
     text-transform: uppercase;
     font-weight: bolder;
-    color: #3f51b5;
+    color: var(--primary-color);
 }
 
 .left-text h2 {
-    color: white;
+    color: var(--white-color);
     text-transform: uppercase;
-    background-color: #3f51b5;
+    background-color: var(--primary-color);
     padding: 5px 0;
-    font-size: var(--h2-size)
+    font-size: 18px;
 }
 
 .left-text p {
     text-align: left;
-    font-size: var(--p-size);
+    font-size: 18px;
     line-height: 150%;
 }
 
 /* Calculator Starts */
 
 .calc-card {
-    background-color: #E1E2E1;
-    border: #3f51b5 solid 3px;
+    background-color: var(--bg-color);
+    border: var(--primary-color) solid 3px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -93,9 +88,8 @@ body {
     text-align: right;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: var(--p-size);
+    font-size: 18px;
     letter-spacing: 2px;
-    font-size: var(--p-size);
 }
 
 .btn-row {
@@ -105,27 +99,28 @@ body {
 
 .btn-row button {
     font-weight: bolder;
+    color: var(--black-color)
 }
 
 
 .btn-row .btn:hover {
-    background-color: #001064;
-    color: white !important;
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
 }
 
 .btn-row .btn-ac {
-    background-color: #5f5fc4;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .btn-row .btn-ac:hover {
-    background-color: #001064;
+    background-color: var(--primary-color);
 }
 
 /* Card of Why WE  */
 .freeuse,
 .easyuse {
-    background-color: #E1E2E1;
+    background-color: var(--bg-color);
     color: var(--color-dark-dark)
 }
 
@@ -135,14 +130,14 @@ body {
 
 
 .feature-container h2 span {
-    color: #3f51b5;
+    color: var(--primary-color);
 }
 
 /* Category Portion */
 .category-icon i {
     padding: 20px;
     display: block;
-    color: #3f51b5;
+    color: var(--primary-color);
 }
 
 .card-calculator-list {
@@ -156,7 +151,7 @@ body {
 }
 
 .card-calculator-list li i {
-    color: #3f51b5;
+    color: var(--primary-color);
 }
 
 
@@ -164,15 +159,16 @@ body {
     text-decoration: none;
     font-weight: 400;
     padding: 3px;
-    color: #0a0a0a;
+    color: var(--black-color);
 }
 
 .card-calculator-list li a:hover {
-    border-bottom: #001064 1px solid;
+    border-bottom: var(--secondary-color) 1px solid;
 }
 
 .category-card:nth-child(odd) .card {
-    background-color: var(--amazon-secondary);
+    background-color: var(--bg-color);
+
 }
 
 .category-card .card {
@@ -187,19 +183,19 @@ body {
 }
 
 .category-card .card-body .card-title {
-    color: var(--color-dark-dark);
+    color: var(--primary-color);
     font-weight: 700;
     padding-bottom: 2px;
 }
 
 /*footer*/
 .col_white_amrc {
-    color: white;
+    color: var(--white-color);
 }
 
 footer {
     width: 100%;
-    background-color: #283593;
+    background-color: var(--primary-color);
     min-height: 250px;
     padding: 10px 0px 25px 0px;
     margin-top: 5%;
@@ -212,7 +208,7 @@ footer {
 
 footer p {
     font-size: 13px;
-    color: white;
+    color: var(--white-color);
     padding-bottom: 0px;
     margin-bottom: 8px;
 }
@@ -233,11 +229,11 @@ footer p {
 }
 
 .footer_ul_amrc li a {
-    color: white;
+    color: var(--white-color);
 }
 
 .footer_ul_amrc li a:hover {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -257,7 +253,7 @@ footer p {
 
 .footer_ul2_amrc li p {
     display: table;
-    color: white;
+    color: var(--white-color);
 }
 
 .footer_ul2_amrc li a:hover {
@@ -269,7 +265,7 @@ footer p {
 }
 
 .bottom_border {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white-color);
     padding-bottom: 20px;
 }
 
@@ -288,8 +284,8 @@ footer p {
 }
 
 .social_footer_ul li a {
-    color: white;
-    border: 1px solid white;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
     padding: 8px;
     border-radius: 50%;
 }
@@ -319,15 +315,14 @@ footer p {
 }
 
 .breadcrumb-item a {
-    color: #000;
-
+    color: var(--black-color);
 }
+
 
 .article-container .faq-answer::before {
     content: "Answers: ";
     font-weight: bolder;
 }
-
 
 
 .article-container p {
@@ -338,7 +333,7 @@ footer p {
 .article-container img {
     width: 90%;
     height: auto;
-    margin-bottom: 10px;
+    margin: 10px auto;
     padding: 15px;
     border-radius: 8px;
 }
@@ -346,7 +341,7 @@ footer p {
 
 
 .form-entry {
-    background-color: #E1E2E1;
+    background-color: var(--bg-color);
 
 }
 
@@ -356,24 +351,26 @@ footer p {
 
 .form-entry .btn-form {
     background-color: #283593;
+    background-color: var(--primary-color);
     width: 80%;
-    color: white;
+    color: var(--white-color);
 
 }
 
 .calculation-form {
-    border-right: #283593 solid 1px;
+    border-right: var(--primary-color) solid 1px;
     padding: 2px;
 }
 
 .related {
-    background-color: #E1E2E1;
-    color: #001064;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
 }
 
 .related h2 {
     display: flex;
-    color: #001064;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .related ul {
@@ -389,18 +386,18 @@ footer p {
 }
 
 .related ul li a {
-    border-bottom: var(--color-dark-light) double 2px;
+    border-bottom: var(--primary-color) double 2px;
+    text-decoration: none;
     padding-bottom: 3px;
-    color: #001064;
+    color: var(--primary-color);
 }
 
 .related ul li a:hover {
-    text-decoration: none;
-
+    border-bottom: none;
 }
 
 .related-first {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* Admin Menu */
@@ -410,28 +407,29 @@ footer p {
 .admin-items a,
 .admin-items:hover,
 .admin-items:active {
-    color: white !important;
+    color: var(--white-color) !important;
 }
 
 .admin-items ul {
-    background-color: #283593;
+    background-color: var(--primary-color);
 }
 
 .admin-items ul li a:hover {
-    background-color: #4e62fd;
+    background-color: var(--secondary-color);
 }
 
 .admin-items-logout a {
-    color: #283593;
-    background-color: white;
-    border: white 1px solid;
+    color: var(--primary-color);
+    font-weight: 700;
+    background-color: var(--white-color);
+    border: var(--white-color) 1px solid;
     border-radius: 5px;
 
 }
 
 .admin-items-logout a:hover {
-    background-color: #6375ff;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
 }
 
 /* All Author Page */
@@ -449,20 +447,19 @@ footer p {
     margin-bottom: 13px !important;
 }
 
-#example_paginate a,
-{
-background-color: #001064;
-margin-top: 2px !important;
-color: white !important;
+#example_paginate a {
+    background-color: var(--primary-color);
+    margin-top: 2px !important;
+    color: var(--white-color) !important;
 }
 
 #example_info {
-    color: #001064;
+    color: var(--primary-color);
 }
 
 /* Add Author Section */
 
 .admin-btn {
-    background-color: #283593;
-    color: white;
+    background-color: var(--secondary-color) !important;
+    color: var(--white-color);
 }
