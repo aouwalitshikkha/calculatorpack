@@ -463,3 +463,13 @@ footer p {
     background-color: var(--secondary-color) !important;
     color: var(--white-color);
 }
+
+.btn-home-category {
+    background-color: var(--secondary-color);
+    color: var(--white-color)
+}
+
+.btn-home-category:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color)
+}
