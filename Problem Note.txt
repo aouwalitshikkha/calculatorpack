@@ -4,3 +4,20 @@
 4. 500 Template
 5. Share Link Url 
 6. Social Share 
+7. Address 
+8. Ahref Title 
+9.time tag 
+10 Image Title 
+13. Figure Class 
+14.Image Srcset
+15.Table Caption 
+16. Accesibility 
+17. Application-name 
+18. Meta Data
+
+Need To Do 
+-----------
+1. Separate Header 
+2. Separate Body
+3. 404 Page Design 
+5. 500 Page Design
