@@ -21,3 +21,9 @@ Need To Do
 2. Separate Body
 3. 404 Page Design 
 5. 500 Page Design
+
+
+Note:
+
+og Image needs full url 
+
