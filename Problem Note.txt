@@ -13,7 +13,8 @@
 15.Table Caption 
 16. Accesibility 
 17. Application-name 
-18. Meta Data
+18. Meta Data -- Fixed
+19. Date Section - Fixed
 
 Need To Do 
 -----------
