@@ -304,14 +304,48 @@ footer p {
     background-color: var(--bg-color);
 }
 
+.article__calculator {
+    border: var(--primary-color) 2px double;
+}
+
 .article__calculator__header p {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    /* border: var(--secondary-color) 2px solid; */
     padding: 8px 0;
-    color: var(--white-color);
+    color: var(--primary-color);
+    font-weight: 800;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
+    border-bottom: var(--primary-color) 1px solid;
 
 }
+
+.article__share {
+    background-color: var(--bg-color);
+}
+
+.article__share input:focus,
+.form-control[readonly] {
+    background-color: var(--bg-color);
+    border: none;
+}
+
+.article__share input:focus {
+    background-color: var(--bg-color);
+    box-shadow: none;
+    border: none;
+}
+
+.article__share .copy-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.article__share .copy-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
 
 .article__button {
     background-color: var(--primary-color);
