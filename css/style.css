@@ -300,107 +300,33 @@ footer p {
 
 
 /* Single HTML */
-.article-container {
-    margin: 0 auto 5% auto;
-}
-
-.article-container h1 {
-    font-size: 32px;
-    padding: 5px 2px;
-    font-weight: 800;
-}
-
-.article-container h2 {
-    font-size: 28px;
-    padding: 5px 2px;
-    font-weight: 700;
-}
-
-.breadcrumb-item a {
-    color: var(--black-color);
-}
-
-
-.article-container .faq-answer::before {
-    content: "Answers: ";
-    font-weight: bolder;
-}
-
-
-.article-container p {
-    font-size: 18px;
-    line-height: 1.8rem;
-}
-
-.article-container img {
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-
-
-.form-entry {
+.bg-my {
     background-color: var(--bg-color);
-
 }
 
-.form-entry row {
-    margin: 0 auto;
-}
-
-.form-entry .btn-form {
-    background-color: #283593;
-    background-color: var(--primary-color);
-    width: 80%;
+.article__calculator__header p {
+    background-color: var(--secondary-color);
+    padding: 8px 0;
     color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 14px;
 
 }
 
-.calculation-form {
-    border-right: var(--primary-color) solid 1px;
-    padding: 2px;
+.article__button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+
 }
 
-.related {
-    background-color: var(--bg-color);
-    color: var(--secondary-color);
+.article__button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: none;
+
 }
 
-.related h2 {
-    display: flex;
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.related ul {
-    list-style-type: none;
-    display: inline-flex;
-    width: 100%;
-}
-
-.related ul li {
-    padding-right: 2%;
-    align-items: center;
-    justify-content: center;
-}
-
-.related ul li a {
-    border-bottom: var(--primary-color) double 2px;
-    text-decoration: none;
-    padding-bottom: 3px;
-    color: var(--primary-color);
-}
-
-.related ul li a:hover {
-    border-bottom: none;
-}
-
-.related-first {
-    font-weight: 800;
-}
 
 /* Admin Menu */
 

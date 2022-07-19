@@ -25,6 +25,6 @@ Need To Do
 
 
 Note:
-
 og Image needs full url 
+Fixing New Single HTML Sidebar
 
