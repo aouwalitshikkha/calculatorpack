@@ -28,4 +28,6 @@ Note:
 og Image needs full url 
 Fixing New Single HTML Sidebar
 FAQ Section Structed Data
+Social Share after the results
+
 
