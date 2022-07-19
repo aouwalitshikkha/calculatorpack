@@ -23,6 +23,11 @@ body {
 
 }
 
+.bg-my {
+    background-color: var(--bg-color);
+}
+
+
 
 
 /* Menubar CSS Codes  */
@@ -51,9 +56,6 @@ body {
 
 /* here section */
 
-.hero {
-    background-color: var(--bg-color);
-}
 
 .left-text h1 {
     text-transform: uppercase;
@@ -78,7 +80,6 @@ body {
 /* Calculator Starts */
 
 .calc-card {
-    background-color: var(--bg-color);
     border: var(--primary-color) solid 3px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -122,7 +123,6 @@ body {
 /* Card of Why WE  */
 .freeuse,
 .easyuse {
-    background-color: var(--bg-color);
     color: var(--color-dark-dark)
 }
 
@@ -300,13 +300,43 @@ footer p {
 
 
 /* Single HTML */
-.bg-my {
-    background-color: var(--bg-color);
-}
+
 
 .article__calculator {
     border: var(--primary-color) 2px double;
 }
+
+.article__calculator h2 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.article__calculator p {
+    color: var(--primary-color);
+}
+
+.article__calcualtor,
+.article__calcualtor input {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.article__calcualtor label a {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.article__calcualtor input,
+.article__calcualtor input::placeholder {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.article__calcualtor_result table {
+    color: var(--primary-color);
+}
+
+
 
 .article__calculator__header p {
     /* background-color: var(--secondary-color); */
@@ -320,15 +350,18 @@ footer p {
 
 }
 
-.article__share {
-    background-color: var(--bg-color);
-}
+
+
+
 
 .article__share input:focus,
 .form-control[readonly] {
     background-color: var(--bg-color);
     border: none;
+    color: var(--primary-color);
 }
+
+
 
 .article__share input:focus {
     background-color: var(--bg-color);
@@ -337,7 +370,6 @@ footer p {
 }
 
 .article__share .copy-btn {
-    background-color: var(--primary-color);
     color: var(--white-color);
 }
 
@@ -360,6 +392,46 @@ footer p {
     border: none;
 
 }
+
+.metadata {
+    font-size: 15px;
+    color: var(--black-color)
+}
+
+/* Sidebar */
+.search {
+    font-weight: 700;
+    color: var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.search input,
+.search input:focus {
+    border: var(--primary-color) 1px solid;
+    box-shadow: none;
+    border-radius: 8px;
+    color: var(--secondary-color);
+}
+
+.related-post {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.related-post h4 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.related-post .list-group .list-group-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+
 
 
 /* Admin Menu */

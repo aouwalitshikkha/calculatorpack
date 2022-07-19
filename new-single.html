@@ -135,7 +135,7 @@
                 <div class="row  p-2">
                     <div class="col-md-auto">
                         <!-- breadcrumb starts -->
-                        <nav style="--bs-breadcrumb-divider: '&#8594';" aria-label="breadcrumb" class="d-flex">
+                        <nav style="--bs-breadcrumb-divider: '&#8594;';" aria-label="breadcrumb" class="d-flex">
                             <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
 
                                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
@@ -184,7 +184,7 @@
                             </p>
                         </div>
 
-                        <div class="article__calculator bg-my py-3 my-4">
+                        <div class="article__calculator bg-my py-4 my-4">
                             <div class="text-center mb-3 border-bottom">
                                 <h2 class="text-center h4">Absolute Value Calculator</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, accusamus?</p>
@@ -202,36 +202,39 @@
                                             <p>Enter Calcualtor Data</p>
                                         </div>
                                         <div class="card-body">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Example
-                                                    label (<a class="text-decoration-none" href="">Defination</a>)
-                                                </label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput"
-                                                    placeholder="Example input placeholder">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput2" class="form-label">Another
-                                                    label (<a class="text-decoration-none"
-                                                        href="">Defination</a>)</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                    placeholder="Another input placeholder">
-                                            </div>
+                                            <form action="GET">
+                                                <div class="mb-3 article__calcualtor">
+                                                    <label for="formGroupExampleInput" class="form-label">Example
+                                                        label (<a class="text-decoration-none defination"
+                                                            href="">Defination</a>)
+                                                    </label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                                        placeholder="Example input placeholder">
+                                                </div>
+                                                <div class="mb-3 article__calcualtor">
+                                                    <label for="formGroupExampleInput2" class="form-label">Another
+                                                        label (<a class="text-decoration-none defination"
+                                                            href="">Defination</a>)</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
+                                                        placeholder="Another input placeholder">
+                                                </div>
 
-                                            <input type="submit" value="Calculate" class="btn article__button">
-                                            <input type="reset" value="Reset" class="btn btn-danger">
+                                                <input type="submit" value="Calculate" class="btn article__button">
+                                                <input type="reset" value="Reset" class="btn btn-danger">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
 
 
-                                <div class="col">
+                                <div class="col article__calcualtor_result">
                                     <div class="card border-0 px-3 bg-my">
                                         <div
                                             class="card-header bg-transparent article__calculator__header border-0 text-center h4">
                                             <p>Results</p>
                                         </div>
                                         <div class="card-body">
-                                            <table class="table table-stripe ">
+                                            <table class="table table-stripe">
 
                                                 <tbody>
                                                     <tr>
@@ -248,8 +251,6 @@
                                                 </tbody>
                                             </table>
 
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -257,18 +258,18 @@
                             </div>
                         </div>
 
-                        <div class="article__share bg-my text-white text-center p-2">
+                        <div class="article__share my-bg text-white text-center p-2">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text bg-my" id=""><i
-                                            class="fa-solid fa-share-nodes"></i>&nbsp;
+                                    <span class="input-group-text bg-my"><i class="fa-solid fa-share-nodes"></i>&nbsp;
                                         Share</span>
                                 </div>
                                 <label for="copylink" class="visually-hidden">Share link</label>
                                 <input type="text" class="form-control bg-my" readonly
                                     value="http://127.0.0.1:5500/new-single.html" id="copylink">
                                 <div class="input-group-append">
-                                    <button class="btn copy-btn" type="button"><i class="fa-solid fa-copy"></i></button>
+                                    <button class="btn copy-btn my-bg" type="button"><i
+                                            class="fa-solid fa-copy"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -340,43 +341,59 @@
 
                             </div>
 
-
-
+                            <aside class="metadata mt-3 bg-my row">
+                                <hr>
+                                <p>Article and Calcualtor is published by <span>Meher Nigar</span> on January 2, 2000,
+                                    filled in <span>Webamter Calculator</span></p>
                         </div>
+                        </aside>
                     </article>
 
                 </main>
                 <!--col-9 Ends-->
-                <div class="col-md-3">
-                    <div class="search p-3 border">
-                        <form action="">
-                            <label for="search">Search Calculator</label>
-                            <input type="text" class="form-control" name="search" id="search">
+                <aside class="col-md-3 sidebar">
+
+
+                    <div class="search p-3 bg-my">
+                        <form action="GET">
+                            <label for="search" class="mb-3">Search Calculator</label>
+                            <input type="text" class="form-control search__box" name="search" id="search"
+                                placeholder="Search Calcualtor">
                         </form>
                     </div>
 
-                    <div class="related-post p-3">
+
+
+
+
+
+
+                    <div class="related-post p-3 bg-my">
                         <h4 class="h5">Related Calcualtor</h4>
-                        <ul>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+
+
                         </ul>
                     </div>
 
-                    <div class="related-post p-3">
+                    <div class="related-post p-3 bg-my">
                         <h4 class="h5">Calcualtor Categories</h4>
-                        <ul>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
-                            <li class="related-post__item">Absolute Value Calcualtor</li>
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+                            <li class="list-group-item bg-my"> <a href="">Absolute Value Calcualtor</a> </li>
+
+
                         </ul>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
 
