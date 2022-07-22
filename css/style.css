@@ -356,9 +356,10 @@ footer p {
 
 .article__share input:focus,
 .form-control[readonly] {
-    background-color: var(--bg-color);
     border: none;
     color: var(--primary-color);
+    font-weight: 600;
+
 }
 
 
@@ -371,6 +372,7 @@ footer p {
 
 .article__share .copy-btn {
     color: var(--white-color);
+    background-color: var(--primary-color);
 }
 
 .article__share .copy-btn:hover {
