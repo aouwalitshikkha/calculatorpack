@@ -111,6 +111,11 @@ body {
     color: var(--white-color) !important;
 }
 
+.btn-row .btn:focus {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+}
+
 .btn-row .btn-ac {
     background-color: var(--primary-color);
     color: var(--white-color);
